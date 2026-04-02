@@ -4,11 +4,11 @@
     let rickroll = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     let url = "https://instagram.dmaltzi.com"
     let profile = "/profile.jpg"
-    let imageUrl = url + profile
+    let image = url + profile
     $effect(() => {
         setTimeout(() => {
             window.location.href = rickroll;
-        }, 500);
+        }, 250);
     })
 </script>
 
@@ -20,13 +20,12 @@
     <meta property="og:url" content={url} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={imageUrl} />
-    
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={description} />
-    <meta name="twitter:image" content={imageUrl} />
-</svelte:head>
+    <meta property="og:image" content={image}/>
+    <meta property="twitter:url" content={url} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={image}>
+    </svelte:head>
 
 <div style="font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh;">
     <p>Redirecting to Instagram...</p>
