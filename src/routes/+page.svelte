@@ -1,12 +1,11 @@
 <script>
-    import image from "$lib/assets/profile.jpg"
-    import { onMount } from "svelte";
     let title = "(@dmaltzi) • Instagram profile";
     let description = "435 Followers, 3,267 Following, 120 Posts - See Instagram photos and videos from (@dmaltzi)";
     let rickroll = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     let url = "https://instagram.dmaltzi.com"
-    let imageUrl = url + image;
-    onMount(() => {
+    let profile = "/profile.jpg"
+    let imageUrl = url + profile
+    $effect(() => {
         setTimeout(() => {
             window.location.href = rickroll;
         }, 500);
