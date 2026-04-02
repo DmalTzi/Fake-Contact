@@ -3,6 +3,7 @@
     let title = "(@dmaltzi) • Instagram profile";
     let description = "435 Followers, 3,267 Following, 120 Posts - See Instagram photos and videos from (@dmaltzi)";
     let url = "https://instagram.dmaltzi.com/"
+    let imageUrl = url + image;
 </script>
 
 <svelte:head>
@@ -13,7 +14,7 @@
     <meta property="og:url" content={url} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:image" content={image}/>  
+    <meta property="og:image" content={imageUrl}/>  
     <meta property="og:type" content="website" />
 </svelte:head>
 
