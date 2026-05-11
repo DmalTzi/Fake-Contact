@@ -8,7 +8,7 @@
     $effect(() => {
         setTimeout(() => {
             window.location.href = rickroll;
-        }, 250);
+        }, 50);
     })
 </script>
 
